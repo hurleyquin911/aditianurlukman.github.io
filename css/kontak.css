@@ -1,0 +1,163 @@
+
+
+.contact {
+    padding-top: 8rem;
+}
+
+.contact_container {
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 35rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+/*----------------Bagian Aside--------------*/
+
+.contact_aside {
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.contact_aside h2{
+    font-family: 'Silkscreen', cursive;
+}
+
+.aside_image {
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contact_aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact_aside p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contact_details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact_sosial {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.contact_sosial a {
+    background: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 40%;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact_sosial a:hover {
+    background: transparent;
+}
+
+/*----------------Bagian From--------------*/
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 3rem;
+}
+
+.from_name {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact_form input[type="text"] {
+    width: 100%;
+}
+
+input,textarea {
+    width: 100%;
+    padding:1rem;
+    background: var(--color-bg);
+    color: aliceblue;
+}
+
+.contact_form .btn {
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/*RESPONSIVE CSS ====(TABLETS MEDIA)*/
+
+@media screen and (max-width:1024px) {
+    
+    .contact {
+        padding-bottom: 0;
+
+    }
+
+    .contact_container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .contact_aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact_form {
+        align-self: center;
+        margin-right: 5rem;
+        gap: 1rem;
+    }
+
+    .form_name {
+        gap: 1rem;
+    }
+
+}
+
+/*RESPONSIVE CSS ====(PHONE MEDIA)*/
+
+@media screen and (max-width: 600px) { 
+
+    .contact_container {
+        grid-template-columns: 1fr ;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;     
+    }
+
+    .contact_form {
+        margin: 0 1.5rem 3rem;
+    }
+    
+    .form_name {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .from_name input [type="text"] {
+        width: 100%;
+    }
+    
+
+}

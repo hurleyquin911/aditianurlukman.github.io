@@ -1,0 +1,61 @@
+
+
+.list_container {
+    background: var(--color-bg);
+    margin-top: 8rem;
+    padding: 3rem;
+
+}
+
+.list_kanan {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1rem;
+}
+
+.kanan_gis {
+    display: grid;
+    grid-template-columns: repeat(1fr , 1fr);
+}
+
+.btn2{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 0.5rem ;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: 1rem ;
+    font-family: 'Silkscreen', cursive;
+}
+
+.btn2:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary2 {
+    background: mediumaquamarine;
+    color: var(--color-white);
+
+}
+/*asdasasdasd */
+
+@media screen and (max-width: 1024px){
+
+    .list_kanan {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .list_kanan {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 1rem;
+    }
+}
